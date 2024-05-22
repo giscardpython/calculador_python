@@ -1,4 +1,3 @@
-
 while True:
     # entrada de dados
     numero1 = str(input('Informe o 1o número: ')).replace(',','.')
@@ -31,6 +30,14 @@ while True:
         case _:
             print('Operação inválida')
             continue                
-        case 'x':
-            break                
  
+
+    continuar = input('Deseja continuar (S/N)? ').upper()
+
+    if continuar == 'S':
+        continue
+    elif continuar == 'N':
+        break
+    else:
+        print('Opção inválida')
+        continue
